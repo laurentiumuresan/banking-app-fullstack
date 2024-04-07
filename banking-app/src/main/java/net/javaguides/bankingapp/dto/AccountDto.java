@@ -1,13 +1,19 @@
 package net.javaguides.bankingapp.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+//import lombok.AllArgsConstructor;
+//import lombok.Data;
+//
+//@Data
+//@AllArgsConstructor
+//public class AccountDto {
+//    private Long id;
+//    private String accountHolderName;
+//    private double balance;
+//    private String email;
+//}
 
-@Data
-@AllArgsConstructor
-public class AccountDto {
-    private Long id;
-    private String accountHolderName;
-    private double balance;
-    private String email;
+public record AccountDto(Long id,
+                         String accountHolderName,
+                         double balance,
+                         String email) {
 }
